@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Tienda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="iniciar()">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Pedido.html">Pedido</a></li>
+        <li class="active"><a href="RegistroProducto.html">Registro de producto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="conteiner-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <!--VA FORMULARIO-->
+        <center>
+          <h1 class="titulo2">Registrar</h1>
+          <form name="formulario" id="formulario" method="post" action="#">
+            <label> Nombre del producto <input type="text" id="nombre" /> </label>
+            <label>
+              Descripción <input type="text" id="descripcion" />
+            </label>
+            <label>
+              Precio <input type="text" id="precio" maxlength="6" />
+            </label>
+            <button type="button" onclick="agregar();">Enviar</button>
+          </form>
+        </center>
+
+
+      </div>
+      <div class="col-md-8">
+
+        <h1 class="titulo2">Listado de productos</h1>
+        <table id="productos" class="table clasetabla">
+
+        </table>
+
+      </div>
+    </div>
+
+   
+
+    
+
+
+
+
+    <!--enlace a js-->
+    <!--<script src="js/alertas.js"></script>-->
+
+    <script src="js/reloj.js"></script>
+
+    <!--<script src="js/arreglos.js"></script>-->
+    <script src="js/catalogo.js"></script>
+
+    <script>
+
+      function iniciar() {
+        llenarCatalogo();
+        mostrarProductos();
+      }
+
+      /* const email = document.getElementById("mail");
+  
+       email.addEventListener("input", function (event) {
+         if (email.validity.typeMismatch) {
+           email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+         } else {
+           email.setCustomValidity("");
+         }
+       });
+       */
+    </script>
+
+
+</body>
+
+</html>

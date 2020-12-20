@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-rendering: optimizelegibility;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  color: #333333;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 600;
+  text-align: center;
+}
+
+.navbar-inverse {
+  background-image: linear-gradient(
+    to right top,
+    #f6ac39,
+    #f49c2c,
+    #f18b21,
+    #ee7a18,
+    #eb6712
+  );
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 0px;
+ 
+ 
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color:#168124;
+}
+
+.cover-index {
+  background-image: url("../img/header1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 550px;
+}
+
+.titular {
+  text-decoration: underline #f27121;
+  color: #168124;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 600;
+  max-width: 500px;
+  margin:auto;
+  text-align: center;
+  margin-top: 10%;
+ 
+  padding: 20px 30px 30px 30px;
+}
+.margen {
+  margin: 50px;
+}
+
+.row-1 {
+  background-color: #168124;
+  padding: 100px;
+}
+
+
+
+.titulo {
+  font-family: "Sansita Swashed", cursive;
+ font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.titulo2 {
+  font-family: "Sansita Swashed", cursive;
+  text-align: center;
+  color: #f27121;
+}
+
+a {
+  color: #fff;
+  font-family: "Sansita Swashed", cursive;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+
+.row-pie {
+  background-color: #f27121;
+}
+
+.xs-text {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 1em;
+}
+
+
+
+.max {
+  max-width: 600px;
+  margin: auto;
+}
+
+/*ESTILOS FORMULARIO*/
+form {
+  padding: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+input {
+  display: block;
+  min-width: 20rem;
+  margin-top: 0.2rem;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0.5rem 0.1rem;
+  border: 0;
+  border-bottom: 5px solid var(--hotpink);
+  font-size: 1.5rem;
+  color: var(--hotpink);
+}
+
+input:focus {
+  outline: 0;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+label:nth-of-type(even) input {
+  border-bottom-color: var(--orange);
+  color: var(--orange);
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-image: var(--gradient);
+  padding: 0.75rem 4rem;
+  border-radius: 5rem;
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+.button2 {
+  cursor: pointer;
+  border: 0;
+  background-image: var(--gradient);
+  padding: 0.75rem 4rem;
+  border-radius: 5rem;
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1;
+  transition: 0.3s;
+}
+
+.button2:hover,
+.button2:focus {
+  opacity: 0.9;
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*ESTILOS RELOJ*/
+
+.wrap {
+  /* width: 100%;
+  max-width: 200px;
+  border: orangered solid 1px;*/
+  
+}
+
+.widget {
+  margin: 1em;
+}
+
+.widget p {
+  display: inline-block;
+  line-height: 0.5em;
+}
+
+.fecha {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+  /*margin-bottom: 5px;*/
+  padding: 20px;
+  width: 200px;
+  border-radius: 15px;
+  margin: auto;
+  background-image: linear-gradient(
+    to right top,
+    #f6ac39,
+    #f49c2c,
+    #f18b21,
+    #ee7a18,
+    #eb6712
+  );
+}
+
+
+
+
+.celda{
+  background: #fafafa;
+  color: #333;
+ 
+}

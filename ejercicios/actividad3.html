@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>
+Principal
+</title>
+<link type="stylesheet" src="">
+
+<script>
+	var desicion = "";
+	var edad = 18;
+	var esCasado= true;
+	var esSoltero= false;
+	var peso = 55.400;
+	var charUno = '♪';
+	//alert("Hola Norma");
+	var listaFrutas = ["capulines", "sandia", "naranja"];
+	var casa_principa= 1;
+	var saludo = "Hola Mundo" + 4.9 ;
+	var datox = "40.10";
+
+	function inicioPagina(){
+		var datoFinal = Math.random();
+		var cantidad = prompt("Ingrese el valor de la cantidad de productos: ");
+		var precio = prompt("Ingrese el valor de precio del articulo: ");
+
+		var subtotal = cantidad * precio;
+		var igv = subtotal * 0.19;
+		var monto_a_pagar = subtotal + igv;
+		console.log("Cantidad:"+cantidad);
+		console.log("Precio:"+precio);
+		console.log("Valor de igv:"+igv);
+		console.log("Valor de subtotal:"+ subtotal);
+		console.log("Valor de monto a pagar:"+monto_a_pagar);
+		
+
+		//var datoFinal2 = Math.round(numeroEscrito);
+
+		var mensaje = saludo.concat(3) +" de papel";
+		//console.log(">>"+datoFinal);
+		document.getElementById("boxDato").innerHTML= subtotal;
+	}
+
+
+
+
+
+	function esPar(valor){
+		var residuo = valor % 2;
+		if(residuo == 0){
+			return true;
+		}
+		return false;
+	}
+
+	function sumaNumerosEnteros(valor1,valor2){
+		var total= valor1 + valor2;
+		return total;
+	}
+
+
+</script>
+</head>
+<body onload="inicioPagina();">
+<header>
+<h1>Bienvenidos</h1>
+</header>
+<p>Hola</p>
+
+<div id="boxDato"></div>
+
+<footer>-----------</footer>
+</body>
+</html>

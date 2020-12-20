@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>
+Principal
+</title>
+<link type="stylesheet" src="">
+
+<script>
+	var desicion = "";
+	var edad = 18;
+	var esCasado= true;
+	var esSoltero= false;
+	var peso = 55.400;
+	var charUno = '♪';
+	//alert("Hola Norma");
+	var listaFrutas = ["capulines", "sandia", "naranja"];
+	var casa_principa= 1;
+	
+	
+
+	function inicioPagina(){
+		console.time("tiempo");
+		confirm("¿Desea seguir?");
+		desicion = prompt("¿necesito algo?");
+		console.log("??"+desicion);
+
+		listaFrutas = ["apples", "oranges", "bananas"];
+		
+		var total_a = sumaNumerosEnteros(24 , 7);
+		var total_b = sumaNumerosEnteros(22 , 9);
+		var total = sumaNumerosEnteros(total_a , 2);
+		console.log("total: "+total);
+		//console.error("mi error");
+		/*console.clear();
+		console.table(listaFrutas);*/
+		frutasOtras();
+		console.log("&");
+
+
+		if(total_a == total_b){
+			console.log("son iguales");
+		}
+		else{
+			console.log("no son iguales");
+		}
+
+		if(esSoltero || (total_a > 10)){
+			//
+			console.log("4444");
+		}
+
+
+		var hoy = new Date();
+
+		console.log("fecha: "+hoy);
+		console.log("dia: "+hoy.getDate());
+
+		var saludo="<h2>Hola Mundo</h2>";
+		var elementoBox = document.getElementById("boxDato");
+		elementoBox.innerHTML = saludo; 
+
+		if(esPar(20)){
+			console.log("Es par");
+		}else{
+			console.log("No es par");
+		}
+		console.timeEnd("tiempo");
+	}
+
+
+
+	function frutasOtras(){
+			//aaaaaaaa
+			//var listaFrutas = ["melones", "peras", "fresas"];
+			console.table(listaFrutas);
+	}
+
+	function esPar(valor){
+		var residuo = valor % 2;
+		if(residuo == 0){
+			return true;
+		}
+		return false;
+	}
+
+
+</script>
+</head>
+<body onload="inicioPagina();">
+<header>
+<h1>Bienvenidos</h1>
+</header>
+<p>Hola</p>
+
+<div id="boxDato"></div>
+
+<footer>-----------</footer>
+<script>
+
+	function sumaNumerosEnteros(valor1,valor2){
+		var total= valor1 + valor2;
+		return total;
+	}
+
+
+</script>
+</body>
+</html>

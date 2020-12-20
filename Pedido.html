@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Tienda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="iniciar();">
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="active"><a href="Pedido.html">Pedido</a></li>
+        <li><a href="RegistroProducto.html">Registro de producto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="conteiner-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <!--VA FORMULARIO-->
+        <center>
+          <h1 class="titulo2">Pedido</h1>
+          <form name="compra" id="compra" method="post" action="#">
+            <label> Nombre del producto <input type="text" id="nombre" disabled /> </label>
+            <label>
+              Precio <input type="text" id="precio" disabled />
+            </label>
+            <label>
+              Cantidad <input type="text" id="cantidad" maxlength="6" />
+            </label>
+            <button type="button" onclick="agregarCarrito();">Enviar</button>
+          </form>
+        </center>
+
+
+      </div>
+      <div class="col-md-8">
+
+        <h1 class="titulo2">Lista de productos</h1>
+        <table id="productos" class="table clasetabla"></table>
+
+        <h1 class="titulo2">Carrito</h1>
+        <table id="carrito" class="table clase2tabla2"></table>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--<div class="wrap">
+    <div class="widget">
+      <div class="fecha">
+        <p id="diaSemana" class="diaSemana"> </p>
+        <p id="dia" class="dia"> </p>
+        <p>/ </p>
+        <p id="mes" class="mes"> </p>
+        <p>/ </p>
+        <p id="year" class="year"> </p></br>
+        <!--VA RELOJ>-->
+  <!--<p id="horas" class="horas"> </p>
+        <p> : </p>
+        <p id="minutos" class="minutos"> </p>
+        <p> : </p>
+
+        <p id="ampm" class="ampm"> </p>
+        <p id="segundos" class="segundos"> </p>
+      </div>
+    </div>
+  </div>-->
+
+
+
+
+
+  <!--enlace a js-->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <script src="js/reloj.js"></script>
+
+  <!--<script src="js/arreglos.js"></script>-->
+  <script src="js/catalogo.js"></script>
+
+  <script>
+
+    function iniciar() {
+      llenarCatalogo();
+      mostrarProductosCompra();
+      document.getElementById("compra").reset();
+    }
+           /* const email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+if (email.validity.typeMismatch) {
+email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+} else {
+email.setCustomValidity("");
+}
+});
+*/
+  </script>
+
+
+
+</body>
+
+</html>
